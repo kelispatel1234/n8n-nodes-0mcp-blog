@@ -1,0 +1,56 @@
+{
+  "author": {
+    "name": "kelispatel1234",
+    "url": "https://github.com/kelispatel1234"
+  },
+  "description": "This Repository is for Admin to manage blogs",
+  "devDependencies": {
+    "@n8n/node-cli": "0.41.2",
+    "@types/node": "22.15.29",
+    "eslint": "9.29.0",
+    "prettier": "3.6.2",
+    "typescript": "5.9.3"
+  },
+  "engines": {
+    "node": "\u003e=22.22.0"
+  },
+  "files": [
+    "dist"
+  ],
+  "homepage": "https://github.com/kelispatel1234/n8n-nodes-0mcp-blog",
+  "keywords": [
+    "n8n-community-node-package"
+  ],
+  "license": "MIT",
+  "n8n": {
+    "credentials": [
+      "dist/credentials/Node0mcpBlogApi.credentials.js"
+    ],
+    "n8nNodesApiVersion": 1,
+    "nodes": [
+      "dist/nodes/Node0mcpBlog/Node0mcpBlog.node.js"
+    ],
+    "strict": true
+  },
+  "name": "n8n-nodes-0mcp-blog",
+  "nativeShip": {
+    "artifactSha256": "fa04a577f5cb8e720bc5f563b3679baaee89e5d0e5a494ebf49cea6947c2efeb"
+  },
+  "peerDependencies": {
+    "n8n-workflow": "*"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kelispatel1234/n8n-nodes-0mcp-blog.git"
+  },
+  "scripts": {
+    "build": "n8n-node build",
+    "dev": "n8n-node dev",
+    "lint": "n8n-node lint",
+    "lint:fix": "n8n-node lint --fix"
+  },
+  "version": "1.0.0"
+}
